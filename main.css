@@ -1,0 +1,126 @@
+/* usado como reset, para que o navegador não aplique as configs padrões.
+box sizing faz com que a pagina tente se organizar com as informaçoes que tem */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body > header{
+    background-color: burlywood;
+    padding: 16px 0;
+    color: aliceblue;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header li {
+    display: inline;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-left: 16px;
+}
+
+header li a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.container {
+    width: 1366px;
+    margin: 0 auto 0 auto;
+}
+/*Caso eu tivesse article fora de uma section, eu colocaria section antes do .article*/
+.articles {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+
+.articles article img {
+    /*height: 180px;*/
+    width: 100%;
+}
+
+.articles article {
+    width: 30%;
+}
+
+section {
+    padding: 16px 0;
+}
+
+section h2, 
+.articles article {
+    margin-bottom: 16px;
+    
+}
+
+.articles article h3 {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.articles article a {
+background-color: blue;
+color: #fff;
+padding: 8px;
+display: inline-block;
+text-decoration: none;
+font-weight: bold;
+margin-top: 8px;
+}
+
+.articles article a:hover {
+    text-decoration: underline;
+}
+
+.articles article p
+.articles article a {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.articles article h3 {
+    font-size: 24px;
+}
+
+section h2 {
+    font-size: 32px;
+}
+
+#sports {
+    background-color: rgba(0,255,0,0.1);
+}
+
+#sports .articles article a{
+    background-color: rgba(0,255,0,0.8);
+    color: #000;
+}
+
+#economy {
+    background-color: #f8f59f;
+}
+
+#economy .articles article a {
+    background-color: #ff9f1a;
+}
+
+#entertainment {
+    background-color: rgba(7,200,5,0.3);
+}
+
+#entertainment .articles article a {
+    background-color: rgba(0,255,0,10);
+}
+
+#technology {
+    background-color: gainsboro;
+}
+
+#technology .articles article a{
+    background-color: darkslategrey;
+}
